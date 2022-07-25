@@ -1,8 +1,8 @@
 #!/bin/sh
 
-## Copyright (C) 2012 - 2022 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
+## Copyright (C) 2012 - 2022 ENCRYPTED SUPPORT LP <adrelanos@kicksecure.com>
 ## See the file COPYING for copying conditions.
 
-if [ -x /usr/libexec/whonix-welcome-page/env_var.sh ]; then
-   . /usr/libexec/whonix-welcome-page/env_var.sh
+if [ -x /usr/libexec/kicksecure-welcome-page/env_var.sh ]; then
+   . /usr/libexec/kicksecure-welcome-page/env_var.sh
 fi

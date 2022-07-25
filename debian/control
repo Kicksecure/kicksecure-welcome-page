@@ -1,23 +1,23 @@
-## Copyright (C) 2012 - 2022 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
+## Copyright (C) 2012 - 2022 ENCRYPTED SUPPORT LP <adrelanos@kicksecure.com>
 ## See the file COPYING for copying conditions.
 
-Source: whonix-welcome-page
+Source: kicksecure-welcome-page
 Section: misc
 Priority: optional
-Maintainer: Patrick Schleizer <adrelanos@whonix.org>
+Maintainer: Patrick Schleizer <adrelanos@kicksecure.com>
 Build-Depends: debhelper (>= 13), debhelper-compat (= 13)
-Homepage: https://github.com/Whonix/whonix-welcome-page
-Vcs-Browser: https://github.com/Whonix/whonix-welcome-page
-Vcs-Git: https://github.com/Whonix/whonix-welcome-page.git
+Homepage: https://github.com/Kicksecure/kicksecure-welcome-page
+Vcs-Browser: https://github.com/Kicksecure/kicksecure-welcome-page
+Vcs-Git: https://github.com/Kicksecure/kicksecure-welcome-page.git
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
 
-Package: whonix-welcome-page
+Package: kicksecure-welcome-page
 Architecture: all
 Depends: ${misc:Depends}, fonts-roboto-fontface
-Description: Local Browser Homepage for Whonix
- Whonix specific browser homepage used in Tor Browser.
+Description: Local Browser Homepage for Kicksecure
+ Kicksecure specific browser homepage used in Tor Browser.
  .
- Contains Whonix logo and Whonix links.
+ Contains Kicksecure logo and Kicksecure links.
  .
  Safe to remove, if you know what you are doing.
