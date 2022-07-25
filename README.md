@@ -1,6 +1,6 @@
 # Local Browser Homepage for Kicksecure #
 
-Kicksecure specific browser homepage used in Tor Browser.
+Kicksecure specific browser start page.
 
 Contains Kicksecure logo and Kicksecure links.
 

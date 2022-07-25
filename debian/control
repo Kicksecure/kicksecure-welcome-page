@@ -16,7 +16,7 @@ Package: kicksecure-welcome-page
 Architecture: all
 Depends: ${misc:Depends}, fonts-roboto-fontface
 Description: Local Browser Homepage for Kicksecure
- Kicksecure specific browser homepage used in Tor Browser.
+ Kicksecure specific browser start page.
  .
  Contains Kicksecure logo and Kicksecure links.
  .
