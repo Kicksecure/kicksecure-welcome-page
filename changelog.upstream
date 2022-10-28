@@ -1,3 +1,28 @@
+commit 72749ed2a9910e31f001210d81ac84368d1b6dfe
+Merge: fc63ee3 70e63ec
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Oct 28 11:47:36 2022 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit 70e63ecf7497f0a638de427e1300d8946df12183
+Author: Hans <Hans@example.com>
+Date:   Thu Oct 27 11:34:16 2022 +0200
+
+    Image attribution for CC
+
+commit fc63ee37c6a28447f821b0aae872781b56dff623
+Author: Hans <Hans@example.com>
+Date:   Wed Oct 26 16:56:45 2022 +0200
+
+    Kicksecure welcome page redesign
+
+commit 39fec70a305291fd0c94ee955eafe7a0f6d0a3f4
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jul 25 15:04:20 2022 -0400
+
+    genmkfile uch
+
 commit 0de5a79eefd719fc5cbcc76494d330ce516573dc
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Jul 25 15:04:04 2022 -0400
