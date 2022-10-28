@@ -198,3 +198,7 @@ body {
   display: inline-block;
 }
 
+.legal .about-image {
+  display: block;
+  font-size: .5em;
+}
