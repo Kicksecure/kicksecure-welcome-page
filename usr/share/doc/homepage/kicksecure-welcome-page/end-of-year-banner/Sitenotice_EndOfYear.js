@@ -200,7 +200,7 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 		// ------
 		// Events
 
-		endOfYear.find('.slideshow .slide-buttons span').on( 'click', function() {
+		endOfYear.find('.slideshow .slide-buttons span').on( 'click', () => {
 			if( states.isPlay ) {
 				states.slideIndex = $(this).index() - 1;
 				playNext();
@@ -209,8 +209,10 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 			}
 		});
 		
-		endOfYear.find('.dismiss').on('click', function() {
-			endOfYear.css('display','none');
+		endOfYear.find('.dismiss').on('click', () => {
+			$('#siteNotice').animate({ height: 0, opacity: 0 }, 1000, () => {
+				$(this).attr('style','display:none !important;');
+			});
 			$.cookie('dismiss-end-of-year-sitenotice', true, { expires: 7 } );
 		});
 		
@@ -237,3 +239,4 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 /*
 [[Category:MultiWiki]]
 */
+
