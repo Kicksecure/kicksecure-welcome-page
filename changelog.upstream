@@ -1,3 +1,52 @@
+commit 00315a9e841f5c9c70826689575c75af48526637
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 17 12:00:07 2022 -0500
+
+    minor
+
+commit d1ea7e9f387e4657e78c81e28798739259a2bc00
+Merge: 3ba375c 836b065
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 17 11:15:21 2022 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit 3ba375c4b9703913172e3e3cf7a63abf02f15b39
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 17 10:15:10 2022 -0500
+
+    bumped changelog version
+
+commit 836b065e1a94a1dc15006a53ca9ac8e62eed954f
+Author: Hans <Hans@example.com>
+Date:   Wed Nov 16 16:53:35 2022 +0100
+
+    Library file update
+
+commit 4becca2d461109987fb8bf97443bd6551011f11b
+Author: Hans <Hans@example.com>
+Date:   Wed Nov 16 16:25:51 2022 +0100
+
+    jQuery plain correcting reference
+
+commit 79070cbbab5c258702ff8d7180b8aacf6c1a10a3
+Author: Hans <Hans@example.com>
+Date:   Wed Nov 16 16:20:12 2022 +0100
+
+    jquery plain not min as source
+
+commit 951c914ecae6a83e864d3be259134be81f3aed77
+Author: Hans <Hans@example.com>
+Date:   Wed Nov 16 15:39:21 2022 +0100
+
+    End of year files
+
+commit 7153e7b4961bb0cfd150de10ade9c7d2b1884f1c
+Author: Hans <Hans@example.com>
+Date:   Wed Nov 16 14:51:51 2022 +0100
+
+    Kicksecure End Of Year Banner
+
 commit 6a24ea9e10a23513600bec8078960efbe53726e1
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Nov 15 14:11:37 2022 -0500
