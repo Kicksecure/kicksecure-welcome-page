@@ -38,7 +38,7 @@
 		+ '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">'
 		+  '<input type="hidden" name="business" value="patrick_schleizer@web.de">'
 		+  '<input type="hidden" name="currency_code" value="USD">'
-		+  '<input type="hidden" name="item_name" value="Whonix Prefered Support">'
+		+  '<input type="hidden" name="item_name" value="Priority Support">'
 		+  '<input type="hidden" name="cmd">'
 		+  '<input type="submit" class="submit" name="submit" value="Donate">'
 		+ '</form>'
@@ -66,52 +66,52 @@
 	// 3. jQuery Extension
 
 	$.fn.payViaPaypal = function( action ) {
-		
+
 		// Only allow 'init' at the moment (extendable later)
 		if( action != 'init' ) return;
 
 		$(this).each( function() {
 			// Prevent double initialization
 			if( $(this).hasClass('js-fully-loaded') ) return;
-			
+
 			let amount;
-	
+
 			$(this).html( template.clone() );
-	
+
 			let elements = {
 				interval: { monthly: elementTemplates.interval.monthly.clone(), yearly: elementTemplates.interval.yearly.clone() },
 				amount: { once: elementTemplates.amount.once.clone(), subscription: elementTemplates.amount.subscription.clone() },
 			};
-	
+
 			let root = $(this);
 			let form = root.children('form');
 			let inputCmd = form.children('input[name=cmd]');
-	
+
 			// 4. Events
-	
+
 			root.find('.amount span').on('click', function() {
 				$(this).siblings().removeClass('active');
 				$(this).addClass('active');
-	
+
 				if( $(this).hasClass('manual') ) {
 					amount = $(this).children('input').val();
 				} else {
 					amount = $(this).text();
 				}
-	
+
 				if( isCurrentAmountValid(amount) ) root.removeClass('paypal-amount-error');
 			});
-	
+
 			root.find('.amount span input').on('input', function() {
 				amount = $(this).val();
-	
+
 				if( isCurrentAmountValid(amount) ) root.removeClass('paypal-amount-error');
 			});
-	
+
 			root.find('.interval span').on('click', function() {
 				$(this).siblings().removeClass('active');
 				$(this).addClass('active');
-	
+
 				let t = $(this).text();
 				if( t == 'once' ) {
 					elements.interval.monthly.remove();
@@ -133,38 +133,38 @@
 				}
 				root.removeClass('paypal-interval-error');
 			});
-	
+
 			form.on( 'submit', function(event) {
 				if( isCurrentAmountValid(amount) == false ) {
 					root.addClass('paypal-amount-error');
 					return false;
 				}
-	
+
 				if( ! inputCmd.val() ) {
 					root.addClass('paypal-interval-error');
 					return false;
 				}
-	
+
 				form.children('input[name=amount],input[name=a3]').val(Number.parseFloat(amount).toFixed(2));
-	
+
 				return true;
 			});
-	
+
 			// 6. Finalize Setup
-	
+
 			root.addClass('js-fully-loaded');
-	
+
 			if( root.hasClass('smooth') ) {
 				root.css({ height: 0, overflow: 'hidden' });
 				root.animate( { height: root.prop('scrollHeight') }, function() { root.css({ overflow: '' }); });
 			}
-	
+
 		});
-		
+
 	};
-	
+
 	// 4. Auto-Initialization
-	
+
 	$('.pay-via-paypal-module').payViaPaypal('init');
 
 })();
