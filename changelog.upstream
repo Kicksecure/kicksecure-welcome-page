@@ -1,3 +1,15 @@
+commit 6a24ea9e10a23513600bec8078960efbe53726e1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 15 14:11:37 2022 -0500
+
+    set local kicksecure-welcome-page as default homepage in Firefox ESR
+
+commit 72c91b9d44d09ab59b7b073be0c47951f6d5e062
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Oct 28 11:48:57 2022 -0400
+
+    bumped changelog version
+
 commit 72749ed2a9910e31f001210d81ac84368d1b6dfe
 Merge: fc63ee3 70e63ec
 Author: Patrick Schleizer <adrelanos@whonix.org>
