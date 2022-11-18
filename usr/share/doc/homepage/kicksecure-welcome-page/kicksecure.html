@@ -24,8 +24,8 @@
     <link href="end-of-year-banner/PayViaPaypal.css" type="text/css" rel="stylesheet" media="all" />
     <link href="end-of-year-banner/Sitenotice_EndOfYear.css" type="text/css" rel="stylesheet" media="all" />
 
-    <script src="end-of-year-banner/jquery.js" type="text/javascript"></script>
-    <script src="end-of-year-banner/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/usr/share/javascript/jquery/jquery.js" type="text/javascript"></script>
+    
     <script src="end-of-year-banner/MiniModal.js" type="text/javascript"></script>
     <script src="end-of-year-banner/CodeSelect.js" type="text/javascript"></script>
     <script src="end-of-year-banner/PayViaPaypal.js" type="text/javascript"></script>
@@ -129,30 +129,30 @@
           return; 
         }
       
-        // If the user has the dismiss Cookie on, it will not be executed
-        if( $.cookie('dismiss-end-of-year-sitenotice') === 'true' ) {
-          $('#siteNotice').addClass('hide-notice');
-          return;
-        }
+	      // If the user has the dismissed less than a week ago, it will not be executed
+	      if( localStorage.getItem('dismiss-end-of-year-sitenotice') > Date.now() ) {
+		      $('#siteNotice').addClass('hide-notice');
+		      return;
+	      }
+	      // Else remove item (because it's not valid) if it exists
+	      localStorage.removeItem('dismiss-end-of-year-sitenotice');
 
         $('body').append( '<div class="mini-modal" id="end-of-year-banner-modal"></div>');
         $('#end-of-year-banner-modal').miniModal('init');
 
-        initEndOfYearSitenotice( $('#end-of-year-banner-modal .content'), null, contentForSlides );
+        initEndOfYearSitenotice( $('#end-of-year-banner-modal .content'), 'https://www.kicksecure.com', contentForSlides );
 
         let eoy = $('#donate-end-of-year');
         eoy.find('.btc .cbutton').attr('src','end-of-year-banner/img/40px-BC_Logo_.png')
         eoy.find('.xmr .cbutton').attr('src','end-of-year-banner/img/40px-Monero-symbol-1280.png')
         eoy.find('.eth .cbutton').attr('src','end-of-year-banner/img/40px-Ethereumlogo.png')
 
-        $('#end-of-year-banner-modal').css('opacity',0);
-        $('#end-of-year-banner-modal').miniModal('show');
-        setTimeout( () => {
-          $('#end-of-year-banner-modal').animate( { opacity: 1 }, 1000 );
-        }, 1000 );
+        $('#end-of-year-banner-modal').css('opacity',0).miniModal('show');
+        setTimeout( () => $('#end-of-year-banner-modal').animate( { opacity: 1 }, 1000 ), 1000 );
 
-        eoy.find('.dismiss').on('click', () => {
-          $('#end-of-year-banner-modal').miniModal('hide');
+        $('#end-of-year-banner-modal .mm-close').on('click', function() {
+          $(this).miniModal('hide');
+          localStorage.setItem('dismiss-end-of-year-sitenotice', Date.now() + 7 * 24 * 3600 * 1000 );
         });
 
       });

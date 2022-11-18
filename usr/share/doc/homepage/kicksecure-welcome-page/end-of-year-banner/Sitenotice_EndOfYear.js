@@ -5,11 +5,13 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 		return; 
 	}
 
-	// If the user has the dismiss Cookie on, it will not be executed
-	if( $.cookie('dismiss-end-of-year-sitenotice') === 'true' ) {
+	// If the user has the dismissed less than a week ago, it will not be executed
+	if( localStorage.getItem('dismiss-end-of-year-sitenotice') > Date.now() ) {
 		$('#siteNotice').addClass('hide-notice');
 		return;
 	}
+	// Else remove item (because it's not valid) if it exists
+	localStorage.removeItem('dismiss-end-of-year-sitenotice');
 		
 	let settings = {
 		durationSlide: 10000, // Milliseconds
@@ -65,7 +67,7 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 						+ '<div class="code-select xmr" data-button-image-src="/w/images/thumb/0/05/Monero-symbol-1280.png/40px-Monero-symbol-1280.png"></div>'	
 						+ '<div class="code-select eth" data-button-image-src="/w/images/thumb/2/2c/Ethereumlogo.png/40px-Ethereumlogo.png"></div>'	
 					+ '</div>'	
-					+ '<a href="/wiki/Donate">Or Other Payment Options</div>'	
+					+ `<a href="${assetWikiUrl}/wiki/Donate" target="_blank">Or Other Payment Options</div>`
 				+ '</div>'	
 			+ '</div>'	
 		+ '</div>'	
@@ -200,7 +202,8 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 		// ------
 		// Events
 
-		endOfYear.find('.slideshow .slide-buttons span').on( 'click', () => {
+		endOfYear.find('.slideshow .slide-buttons span').on( 'click', function() {
+		  console.info([ states, $(this) ]);
 			if( states.isPlay ) {
 				states.slideIndex = $(this).index() - 1;
 				playNext();
@@ -209,16 +212,16 @@ function initEndOfYearSitenotice( domElementToPrependTo, assetWikiUrl = '', cont
 			}
 		});
 		
-		endOfYear.find('.dismiss').on('click', () => {
-			$('#siteNotice').animate({ height: 0, opacity: 0 }, 1000, () => {
+		endOfYear.find('.dismiss').on('click', function() {
+			$('#siteNotice').animate({ height: 0, opacity: 0 }, 1000, function() {
 				$(this).attr('style','display:none !important;');
 			});
-			$.cookie('dismiss-end-of-year-sitenotice', true, { expires: 7 } );
+			localStorage.setItem('dismiss-end-of-year-sitenotice', Date.now() + 7 * 24 * 3600 * 1000 );
 		});
 		
 		endOfYear.find('.slideshow .control .flow i').on( 'click', () => playNext( 'toggle' ) );
 		
-		endOfYear.find('.content .mobile-donate-button').on( 'click', () => {
+		endOfYear.find('.content .mobile-donate-button').on( 'click', function() {
 			playNext( false );
 			endOfYear.find('.slideshow').hide();
 			endOfYear.find('.payment').show();
