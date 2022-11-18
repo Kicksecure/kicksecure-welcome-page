@@ -14,7 +14,7 @@ Rules-Requires-Root: no
 
 Package: kicksecure-welcome-page
 Architecture: all
-Depends: ${misc:Depends}, fonts-roboto-fontface
+Depends: ${misc:Depends}, fonts-roboto-fontface, libjs-jquery
 Description: Local Browser Homepage for Kicksecure
  Kicksecure specific browser start page.
  .
