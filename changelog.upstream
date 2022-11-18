@@ -1,3 +1,15 @@
+commit 5b12b74168b17900b994a4de48821c5b3200e449
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 11:48:04 2022 -0500
+
+    hide Firefox welcome page
+
+commit 8ae691ee232bc2300e48afb05dbb9598675abee7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:40:36 2022 -0500
+
+    bumped changelog version
+
 commit 6fdb7e8f581e9e984976ee122ae1824026909010
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Nov 18 07:37:32 2022 -0500
