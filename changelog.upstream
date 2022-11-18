@@ -1,3 +1,52 @@
+commit 6fdb7e8f581e9e984976ee122ae1824026909010
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:37:32 2022 -0500
+
+    use minified jquery version from Debian package sources
+
+commit 5546572b53665c1a119845f3ce0276cd5a8e7728
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:36:58 2022 -0500
+
+    remove trailing white spaces
+
+commit 1141d3cc955ade47cae1e5f3ec33be302e6d0c4b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:16:35 2022 -0500
+
+    deleted:    usr/share/doc/homepage/kicksecure-welcome-page/end-of-year-banner/jquery.cookie.js
+
+commit 95f8dea766e76d2eb5b598e75a2b4b149c1e337c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:08:36 2022 -0500
+
+    Depends: libjs-jquery
+
+commit 7194f5df6ab1ca051373ecaa71e2ed9ecf691e38
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:07:36 2022 -0500
+
+    deleted:    usr/share/doc/homepage/kicksecure-welcome-page/end-of-year-banner/jquery.js
+
+commit 1af7f66aa9b43e45787258634e0257bf75421fb7
+Merge: a44de13 8a27a67
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 07:06:52 2022 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit 8a27a676cfee99be90f7b6122d445a3cf6ef9741
+Author: Hans <Hans@example.com>
+Date:   Fri Nov 18 12:47:07 2022 +0100
+
+    playbuttons payments localStorage jquery-debian
+
+commit a44de13d2c30fbc0573df6c6e281a3a624f76e62
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 17 12:02:14 2022 -0500
+
+    bumped changelog version
+
 commit 00315a9e841f5c9c70826689575c75af48526637
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Nov 17 12:00:07 2022 -0500
