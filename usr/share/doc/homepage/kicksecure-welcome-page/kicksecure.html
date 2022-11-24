@@ -89,7 +89,6 @@
       #donate-end-of-year .slideshow .flow i.is-pause {
         background-image: url('end-of-year-banner/img/play.png');
       }
-
     </style>
 
     <script type="text/javascript">
@@ -150,8 +149,8 @@
         $('#end-of-year-banner-modal').css('opacity',0).miniModal('show');
         setTimeout( () => $('#end-of-year-banner-modal').animate( { opacity: 1 }, 1000 ), 1000 );
 
-        $('#end-of-year-banner-modal .mm-close').on('click', function() {
-          $(this).miniModal('hide');
+        $('#end-of-year-banner-modal .mm-close, #donate-end-of-year .dismiss').on('click', function() {
+          $('#end-of-year-banner-modal').miniModal('hide');
           localStorage.setItem('dismiss-end-of-year-sitenotice', Date.now() + 7 * 24 * 3600 * 1000 );
         });
 

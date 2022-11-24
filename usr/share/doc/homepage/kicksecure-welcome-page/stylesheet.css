@@ -141,6 +141,12 @@ body {
   }
 }
 
+@media (min-aspect-ratio: 2/1) {
+  .news-links {
+    top: 26%;
+  }
+}
+
 /* Search Links */
 
 .search-links {
@@ -174,7 +180,34 @@ body {
 @media (max-width: 760px) {
   .search-links {
     left: 43%;
-    top: 50%;
+    top: 52%;
+  }
+}
+
+@media (max-width: 530px) {
+  .search-links {
+    top: 46%;
+  }
+  .search-links a img {
+    height: 40px;
+  }
+}
+
+@media (min-aspect-ratio: 9/5) {
+  .search-links {
+    top: 75%;
+  }
+  .search-links a img {
+    height: 40px;
+  }
+}
+
+@media (min-aspect-ratio: 2/1) {
+  .search-links {
+    top: 70%;
+  }
+  .search-links a img {
+    height: 40px;
   }
 }
 
