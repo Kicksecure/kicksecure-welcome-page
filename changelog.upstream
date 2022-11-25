@@ -1,3 +1,22 @@
+commit ce2d2160d24fc244318677606b17236e35be1349
+Merge: 710303c 14df76a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 25 03:58:15 2022 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit 14df76a5ced90381b178a132bfd5b85680c5fa1e
+Author: Hans <Hans@example.com>
+Date:   Thu Nov 24 14:12:43 2022 +0100
+
+    Update JS libs, bugfix superwide screen, bugfix modalclose
+
+commit 710303c859da5edd6b232bd7fea3287a330b442e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Nov 18 11:48:24 2022 -0500
+
+    bumped changelog version
+
 commit 5b12b74168b17900b994a4de48821c5b3200e449
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Nov 18 11:48:04 2022 -0500
