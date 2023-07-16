@@ -1,3 +1,15 @@
+commit f7b0fd6db76abdfdba12f99d7d42ec2d1782426c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Jul 16 15:41:43 2023 -0400
+
+    remove peekier search engine
+
+commit 9cdd7a6ac61c072607f9896130a7472fd97288f1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Jun 21 09:31:44 2023 +0000
+
+    bumped changelog version
+
 commit c9415fc77b9bcc2c8977d9b4b263734020754a48
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Jun 21 09:11:28 2023 +0000
