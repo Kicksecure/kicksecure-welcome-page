@@ -1,3 +1,21 @@
+commit 067a70617280f80f16e1109b1c70261f350280fc
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Oct 4 05:39:33 2023 -0400
+
+    add link to trademark policy
+
+commit f634176be94a8dd9b4ee77f8987b1b61c0f3a887
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Oct 4 05:37:33 2023 -0400
+
+    less TM symbols in footer since not needed
+
+commit 181cbe8d2e892c87e0baa5517058100432202b11
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Aug 29 08:16:46 2023 -0400
+
+    bumped changelog version
+
 commit 6c18907f8e64917b370bdee5a1cfc1ee49fc7080
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Aug 29 08:12:58 2023 -0400
