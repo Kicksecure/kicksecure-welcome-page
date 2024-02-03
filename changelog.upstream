@@ -1,3 +1,22 @@
+commit cf9e7c19dbb23c76bb87aaffd4fae081721d708c
+Merge: ef89754 dc9ff29
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Feb 3 15:48:23 2024 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit dc9ff299251a27c70b8cd6e104a42d0c02f8a514
+Author: Hans <you@example.com>
+Date:   Sat Feb 3 11:51:57 2024 +0100
+
+    All Javascript removed, all end-of-year-banner files removed
+
+commit ef89754b0b879f27885b03f780b5045057f32f3b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Oct 21 12:33:55 2023 -0400
+
+    bumped changelog version
+
 commit a511e635861aa33a799db58effdee8c539dd6324
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Oct 21 12:24:01 2023 -0400
