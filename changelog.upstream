@@ -1,3 +1,22 @@
+commit 400bd88bfa89dcefc3d8341174ee4fee523513df
+Merge: 3a42122 cb4b9d7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Sep 11 11:58:05 2024 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit cb4b9d7d725d4e1e435bd216c2e38b45c10c31a4
+Author: Hans <you@example.com>
+Date:   Wed Sep 11 14:18:18 2024 +0200
+
+    Add load info text, docu search, logo drop shadow, style upgrade for all mobile sizes
+
+commit 3a42122d64e4557441fba72a368b95fb88bd92a8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Feb 3 20:51:59 2024 +0000
+
+    bumped changelog version
+
 commit cf9e7c19dbb23c76bb87aaffd4fae081721d708c
 Merge: ef89754 dc9ff29
 Author: Patrick Schleizer <adrelanos@whonix.org>
