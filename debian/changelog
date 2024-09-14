@@ -1,3 +1,9 @@
+kicksecure-welcome-page (3:6.8-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 14 Sep 2024 01:20:56 +0000
+
 kicksecure-welcome-page (3:6.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
