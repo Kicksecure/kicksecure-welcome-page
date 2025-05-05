@@ -15,11 +15,11 @@
 }
 
 a {
-  transition: transform .3s;
+  transition: transform .2s;
 }
 
 a:hover {
-  transform: scale(1.1);
+  transform: scale(1.13);
 }
 
 body {
@@ -52,13 +52,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 52% 0;
+  box-shadow: inset 0 190px 60px #0f112cd9;
 }
 
 /* Navigation */
-
-.navigation {
-  background-image: linear-gradient( rgb( 0 0 0 / 40% ) 20%, rgb( 0 0 0 / 0% ) );
-}
 
 .navigation .banner {
   background-image: url('img/welcome-banner.png');
@@ -125,7 +122,7 @@ body {
   font-size: 1.6em;
   text-decoration: none;
   letter-spacing: -.05em;
-  background: rgb(0 0 0 / 40%);
+  background: #0f112c99;
   margin-bottom: 0.3em;
   padding: 0.3em 0.7em 0.3em;
   text-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
@@ -145,7 +142,7 @@ body {
   position: absolute;
   bottom: 13.7em;
   right: 2.5em;
-  background: rgb( 0 0 0 / 40% );
+  background: #0f112cbb;
   padding: 1em;
 }
 
@@ -188,7 +185,7 @@ body {
 }
 
 .search-docs button:hover {
-  background-color: rgb( 255 255 255 / .4);
+  background-color: #fff5;
   text-shadow: .07em .07em .1em rgba(0, 0, 0, 1);
 }
 
@@ -220,7 +217,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: white;
-  background: rgb( 0 0 0 / 40% );
+  background: #0f112cbb;
   padding: .5em 1em;
   text-shadow: 2px 2px rgb( 0 0 0 / 30% );
   font-weight: bold;
@@ -253,7 +250,7 @@ body {
   left: 0;
   width: 100%;
   color: white;
-  background: rgb(0 0 0 /50%);
+  background: #0f112c99;
   padding: .7em .6em .8em;
   font-size: 1em;
   text-align: center;
