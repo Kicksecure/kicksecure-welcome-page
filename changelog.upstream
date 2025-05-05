@@ -1,3 +1,34 @@
+commit 64c7fc9efd8f93e6b6bfaad5f79ad5f60f452202
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jan 23 11:11:47 2025 -0500
+
+    copyright
+
+commit cd5075bb90c5751375a6ad69d2c1c9d279018e54
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Sep 14 01:20:56 2024 +0000
+
+    bumped changelog version
+
+commit f3e776b3081f01f2129a5507e8bd469852d0ba5c
+Merge: 2b34d3e eb6bea6
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Sep 13 21:17:46 2024 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit eb6bea6120f143a6d8951c3dbe1e582192e2c7e1
+Author: Hans <you@example.com>
+Date:   Fri Sep 13 09:55:57 2024 +0200
+
+    Move local info to footer, remove metager, add perplexity
+
+commit 2b34d3e09e00269ae4f59d57c351c54f88de2675
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Sep 11 20:20:14 2024 +0000
+
+    bumped changelog version
+
 commit 6b77191db329de44d1e9487431dee30fe76c7bbe
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Sep 11 16:16:32 2024 -0400
