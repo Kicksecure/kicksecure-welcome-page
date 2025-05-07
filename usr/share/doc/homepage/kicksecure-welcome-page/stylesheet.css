@@ -254,7 +254,7 @@ a:not(.not-link-like):hover,
 
 .search-links div .transparency-tooltip {
   display: none;
-  background: #0f112c;
+  background: #1d2e6e;
   color: white;
   position: absolute;
   left: 0;
@@ -263,7 +263,7 @@ a:not(.not-link-like):hover,
   text-align: justify;
   padding: 10px;
   transform: translateY( calc( -100% - 11px ) );
-  filter: drop-shadow(0 0 1px white);
+  filter: drop-shadow(0 0 1px #61b5ff) drop-shadow(0 0 1px #61b5ff);
 }
 
 .search-links div:hover .transparency-tooltip,
@@ -280,8 +280,10 @@ a:not(.not-link-like):hover,
 
 .search-links div .transparency-tooltip::before {
   border: 10px solid transparent;
-  border-top-color: #0f112c;
+  border-top-color: #1d2e6e;
   bottom: -20px;
+  left: 50%;
+  transform: translateX( -50% );
 }
 
 .search-links div .transparency-tooltip::after {
