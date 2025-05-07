@@ -1,3 +1,29 @@
+commit 9ada95f48487ae0627e60eb638ed5ec273c45d2d
+Merge: 5979e8c e79eeac
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 7 00:02:14 2025 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit e79eeac1b80e6d55ad1205211160d45f0010ebf0
+Merge: a380d3a 5979e8c
+Author: Hans <you@example.com>
+Date:   Mon May 5 14:19:04 2025 +0200
+
+    Merge branch 'master' of https://github.com/Kicksecure/kicksecure-welcome-page
+
+commit a380d3a272ec16425a0e62fd500ec3b38936ec10
+Author: Hans <you@example.com>
+Date:   Mon May 5 14:12:54 2025 +0200
+
+    Darker styles to accentuate all navigation elements
+
+commit 5979e8c1bfd64acabf57253a8e7c55244a55639c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jan 23 16:24:10 2025 +0000
+
+    bumped changelog version
+
 commit 64c7fc9efd8f93e6b6bfaad5f79ad5f60f452202
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jan 23 11:11:47 2025 -0500
