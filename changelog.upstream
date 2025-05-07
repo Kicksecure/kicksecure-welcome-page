@@ -1,3 +1,41 @@
+commit 5535d6f824c1e995cc994c1be62cbe2ac4393b2e
+Merge: 53ea72b 0648681
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 7 08:31:29 2025 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit 0648681f815bb64495c163c93145af69f398c44d
+Author: Hans <you@example.com>
+Date:   Wed May 7 12:42:15 2025 +0200
+
+    Add documentation for easy understanding later
+
+commit 94517c1c9a24950a663d03f9cafe978be2b8bc80
+Author: Hans <you@example.com>
+Date:   Wed May 7 12:38:17 2025 +0200
+
+    Style improvements for transparency tooltip for better readability
+
+commit ad82cf8f304c2da52c4569b5ed7d591ca0d6af7b
+Merge: 696b639 53ea72b
+Author: Hans <you@example.com>
+Date:   Wed May 7 11:25:48 2025 +0200
+
+    Merge branch 'master' of https://github.com/Kicksecure/kicksecure-welcome-page
+
+commit 696b639574e627a80469c9bd54383a0200a8db4e
+Author: Hans <you@example.com>
+Date:   Wed May 7 11:25:33 2025 +0200
+
+    Implementation of transparency tooltip for search engines
+
+commit 53ea72b673be442b116b3efbf3c45ae742d4c888
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 7 05:02:45 2025 +0000
+
+    bumped changelog version
+
 commit 9ada95f48487ae0627e60eb638ed5ec273c45d2d
 Merge: 5979e8c e79eeac
 Author: Patrick Schleizer <adrelanos@whonix.org>
