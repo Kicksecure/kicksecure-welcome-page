@@ -14,14 +14,6 @@
 	src: url('/usr/share/fonts-roboto-fontface/fonts/roboto/Roboto-Regular.woff');
 }
 
-a {
-  transition: transform .2s;
-}
-
-a:hover {
-  transform: scale(1.13);
-}
-
 body {
   font-family: 'Roboto';
   font-size: 2vmin;
@@ -37,6 +29,19 @@ body {
   width: 100%;
   overflow: auto;
   clear: both;
+}
+
+/* ------------------------------ */
+/* 1.1. link elements hover style */
+
+a:not(.not-link-like),
+.link-like {
+  transition: transform .2s;
+}
+
+a:not(.not-link-like):hover,
+.link-like:hover {
+  transform: scale(1.13);
 }
 
 /* ------- */
@@ -212,34 +217,85 @@ body {
   }
 }
 
-.search-links a {
+.search-links > div {
   display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  background: #0f112cbb;
-  padding: .5em 1em;
-  text-shadow: 2px 2px rgb( 0 0 0 / 30% );
-  font-weight: bold;
-  width: 14%;
-  min-width: 10%;
+  position: relative;
   margin-right: 1%;
+  width: 16.8%;
+  min-width: 12%;
 }
 
-.search-links a:last-child {
+.search-links > div:last-child {
   margin-right: 0;
 }
 
-.search-links a img {
+.search-links > div > a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background: #0f112cbb;
+  padding: .5em 1em;
+}
+
+.search-links div img {
   height: 2.6em;
 }
 
-.search-links a span {
+.search-links div .se-name {
+  color: white;
+  text-shadow: 2px 2px rgb( 0 0 0 / 30% );
+  font-weight: bold;
   display: block;
   font-size: 1em;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: .3em;
+}
+
+.search-links div .transparency-tooltip {
+  display: none;
+  background: #1d2e6e;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: .65em;
+  text-align: justify;
+  padding: 10px;
+  transform: translateY( calc( -100% - 11px ) );
+  filter: drop-shadow(0 0 1px #61b5ff) drop-shadow(0 0 1px #61b5ff);
+}
+
+.search-links div:hover .transparency-tooltip,
+.search-links div .transparency-tooltip:hover {
+  display: block;
+}
+
+.search-links div .transparency-tooltip::before,
+.search-links div .transparency-tooltip::after {
+  content: " ";
+  display: block;
+  position: absolute;
+}
+
+.search-links div .transparency-tooltip::before {
+  border: 10px solid transparent;
+  border-top-color: #1d2e6e;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX( -50% );
+}
+
+/* This enlarges the tooltip so the hover effect can be maintained to reach the tooltip link */
+.search-links div .transparency-tooltip::after {
+  height: 11px;
+  bottom: -11px;
+  width: 100%;
+  left: 0;
+}
+
+.search-links div .transparency-tooltip a {
+  color: #61b5ff;
 }
 
 /* Footer */
