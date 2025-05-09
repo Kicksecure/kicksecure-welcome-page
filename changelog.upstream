@@ -1,3 +1,28 @@
+commit 984c5dee07c48cd1f6b6df26465043c0d3187dc9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri May 9 08:56:45 2025 -0400
+
+    replace duckduckgo (since was replaced with startpage) with "more"
+
+commit 03b0248fdc4ed0b5c989d76d9b3aa09cb666dfbf
+Merge: d963067 eb12a71
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri May 9 08:38:03 2025 -0400
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit eb12a716c81d7d34dac7cfc05b15c6e72d448724
+Author: Hans <you@example.com>
+Date:   Fri May 9 13:29:44 2025 +0200
+
+    Add startpage button and improve styling
+
+commit d963067fe68828f4c021bd99a1f22dc3d644b619
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 7 13:09:09 2025 +0000
+
+    bumped changelog version
+
 commit 5535d6f824c1e995cc994c1be62cbe2ac4393b2e
 Merge: 53ea72b 0648681
 Author: Patrick Schleizer <adrelanos@whonix.org>
