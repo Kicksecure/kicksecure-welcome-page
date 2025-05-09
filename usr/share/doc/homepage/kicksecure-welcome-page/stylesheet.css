@@ -212,7 +212,6 @@ a:not(.not-link-like):hover,
 
 @media (max-width: 500px) {
   .search-links {
-    width: calc( 100% - 10em );
     bottom: 8.5em;
   }
 }
@@ -246,7 +245,7 @@ a:not(.not-link-like):hover,
   text-shadow: 2px 2px rgb( 0 0 0 / 30% );
   font-weight: bold;
   display: block;
-  font-size: 1em;
+  font-size: .9em;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: .3em;
@@ -296,6 +295,10 @@ a:not(.not-link-like):hover,
 
 .search-links div .transparency-tooltip a {
   color: #61b5ff;
+}
+
+.search-links div.image-drop-shadow img {
+  filter: drop-shadow(1px 1px #000) drop-shadow(1px 1px 4px #fff8);
 }
 
 /* Footer */
