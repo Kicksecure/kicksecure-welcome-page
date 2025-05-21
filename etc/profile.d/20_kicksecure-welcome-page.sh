@@ -4,5 +4,5 @@
 ## See the file COPYING for copying conditions.
 
 if [ -x /usr/libexec/kicksecure-welcome-page/env_var.sh ]; then
-   . /usr/libexec/kicksecure-welcome-page/env_var.sh
+   . /usr/libexec/kicksecure-welcome-page/env_var.sh >/dev/null 2>/dev/null
 fi
