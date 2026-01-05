@@ -1,3 +1,31 @@
+commit 9980080e5d4fc462e9900b99bfce1e2cb68528d1
+Merge: 23c69b7 c001974
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jan 5 03:40:03 2026 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit c00197427c4ce7e2e5be6e4031c1e1f0c341a88b
+Merge: 23c69b7 e68bb26
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jan 5 03:15:53 2026 -0500
+
+    Merge pull request #2 from Nurmagoz/patch-1
+    
+    Updated the URL to the new redirected one
+
+commit e68bb2634d2921376bcbd5111429e49666896a6b
+Author: Nurmagoz <11895339+Nurmagoz@users.noreply.github.com>
+Date:   Sun Dec 28 10:33:44 2025 +0000
+
+    Updated the URL to the new redirected one
+
+commit 23c69b701dab016258935bee1e9c9ed157fe9358
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Sep 19 16:14:13 2025 +0000
+
+    bumped changelog version
+
 commit 98612fdea55a91a01dfdf786ed096e72c20fa8c0
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Sep 18 10:07:43 2025 -0400
